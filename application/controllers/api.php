@@ -2,6 +2,11 @@
 defined('BASEPATH') OR exit('No direct scriot access allowed');
 
 class api extends CI_Controller {
+
+    public function __construct() {
+        parent::__construct();
+    } 
+
 	public function get_all_groups()
 	{
         $this->load->model('ScheduleModel');
