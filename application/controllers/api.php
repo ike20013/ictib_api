@@ -45,10 +45,5 @@ class api extends CI_Controller {
         $response = $this->ScheduleModel->day_schedule($day_of_week, $user_id);
 		echo json_encode($response);
     }
-
-    public function index()
-	{
-		$this->load->view('welcome_message');
-	}
 }
 ?>
